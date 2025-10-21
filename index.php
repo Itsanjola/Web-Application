@@ -2,6 +2,7 @@
 session_start();
 include 'db.php';
 
+
 $search = $_GET['search'] ?? '';
 $category = $_GET['category'] ?? '';
 $sort = $_GET['sort'] ?? '';
@@ -115,4 +116,5 @@ $result = $conn->query($query);
 
 <a href="cart.php">🛒 View Cart</a>
 </body>
+
 </html>
