@@ -2,6 +2,7 @@
 session_start();
 include 'db.php';
 
+
 // ADD TO CART
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'])) {
     $id = $_POST['id'];
@@ -147,4 +148,5 @@ if (!empty($_SESSION['cart'])) {
 
 <a style="color:white"; href="index.php">⬅ Back to Products</a>
 </body>
+
 </html>
